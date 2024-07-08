@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Using JavaSCript</title>
+    <!-- Font Awesome CDN Link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" type="image/x-icon">
+    <!-- Link Custom CSS here -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="">
+            </div>
+            <h2>Weather App</h2>
+            <button id="showBox"> <i class="fa-solid fa-magnifying-glass"></i></button>
+        </nav>
+        <div class="main">
+            <div class="errorMessage"></div>
+            <div class="searchInput">
+                <div class="inputField">
+                    <input type="search" id="userInput" placeholder="Enter city name...">
+                </div>
+
+            </div>
+
+            <div class="result-box">
+                <div class="result-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="">
+                </div>
+                <button class="reset">&#x21BB;</button>
+                <div class="weather-result">
+                    <div class="result-image">
+                        <img src="./images/sun.png" id="currentImg" alt="">
+                    </div>
+                    <div class="weather-datails">
+                        <h4 id="temprature">15&#8451;</h4>
+                        <span id="condition">Clear</span>
+                        <p id="location">Lahore,Punjab,Pakistan</p>
+                        <div class="humidity-and-wind">
+                            <div class="humidityBox">
+                                <div class="imgBx">
+                                    <i class="fa-solid fa-droplet"></i>
+                                </div>
+                                <div class="humidityValue">
+                                    <span id="humidity">70%</span><br>
+                                    <span id="humText">Humidity</span>
+                                </div>
+                            </div>
+                            <div class="windBox">
+                                <div class="windImg">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/2676/2676047.png" alt="">
+                                </div>
+                                <div class="windValue">
+                                    <span id="speed">2Km/h</span>
+                                    <span id="speedText">Wind Speed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <button class="reset">&#x21BB;</button> -->
+
+            </div>
+
+        </div>
+        <footer>
+            <p>Copyright &copy; 2024.All Rights Reserved <a href="https://github.com/Raza749">Raza Ali</a></p>
+        </footer>
+    </div>
+
+
+    <!-- Link JavaScript here -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
